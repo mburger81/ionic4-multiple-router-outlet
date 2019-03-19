@@ -9,4 +9,9 @@
 <ion-content padding>
   The world is your oyster.
   <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <a [routerLink]="[ { outlets: { secondary: ['comp1'] } } ]">Comp1</a><br>
+  <a [routerLink]="[ { outlets: { secondary: ['comp2'] } } ]">Comp2</a><br>
+  <a [routerLink]="[ { outlets: { secondary: ['comp3'] } } ]">Comp3</a><br>
+  <!-- <ion-router-outlet name="secondary"></ion-router-outlet> -->
+  <router-outlet name="secondary"></router-outlet>
 </ion-content>
